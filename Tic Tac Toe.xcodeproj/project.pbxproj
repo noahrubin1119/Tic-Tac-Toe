@@ -14,6 +14,7 @@
 		4FD26A9320EE94F200C053DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD26A9120EE94F200C053DF /* LaunchScreen.storyboard */; };
 		4FD26A9E20EE94F200C053DF /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD26A9D20EE94F200C053DF /* Tic_Tac_ToeTests.swift */; };
 		4FD26AA920EE94F200C053DF /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD26AA820EE94F200C053DF /* Tic_Tac_ToeUITests.swift */; };
+		4FD26AB720EE962C00C053DF /* GridLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD26AB620EE962C00C053DF /* GridLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4FD26AA420EE94F200C053DF /* Tic Tac ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD26AA820EE94F200C053DF /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		4FD26AAA20EE94F200C053DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD26AB620EE962C00C053DF /* GridLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4FD26A8820EE94F200C053DF /* AppDelegate.swift */,
 				4FD26A8A20EE94F200C053DF /* ViewController.swift */,
 				4FD26A8C20EE94F200C053DF /* Main.storyboard */,
+				4FD26AB620EE962C00C053DF /* GridLabel.swift */,
 				4FD26A8F20EE94F200C053DF /* Assets.xcassets */,
 				4FD26A9120EE94F200C053DF /* LaunchScreen.storyboard */,
 				4FD26A9420EE94F200C053DF /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD26AB720EE962C00C053DF /* GridLabel.swift in Sources */,
 				4FD26A8B20EE94F200C053DF /* ViewController.swift in Sources */,
 				4FD26A8920EE94F200C053DF /* AppDelegate.swift in Sources */,
 			);

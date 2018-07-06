@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,260 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOr-X5-x6e">
+                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-fr-8po" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="RAi-Dh-QYt"/>
+                                            <constraint firstAttribute="height" constant="75" id="f6A-ZR-dbf"/>
+                                            <constraint firstAttribute="width" constant="75" id="iTY-Md-p57"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="zrh-H8-DuF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROF-GN-0Cs" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="0.0" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="5Pp-Uo-TIU"/>
+                                            <constraint firstAttribute="width" constant="75" id="YBe-ue-vdq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl0-UG-JjY" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="0.0" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="SpH-zN-QSR"/>
+                                            <constraint firstAttribute="width" constant="75" id="eAp-E3-kSV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-l6-MJV" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="KIu-ZO-DlL"/>
+                                            <constraint firstAttribute="height" constant="75" id="o9d-ec-xI7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keB-kD-FDS" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="88" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="XLO-Bb-kVE"/>
+                                            <constraint firstAttribute="width" constant="75" id="eDj-dk-oWU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-ub-m9r" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="88" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="dTW-0A-rHh"/>
+                                            <constraint firstAttribute="height" constant="75" id="yYw-CW-rAL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-Mn-z8w" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="EMD-D6-gvx"/>
+                                            <constraint firstAttribute="width" constant="75" id="ScA-8f-hlM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-lR-B5i" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="LOC-dt-xBg"/>
+                                            <constraint firstAttribute="width" constant="75" id="uNG-qm-a3c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz3-9j-71C" customClass="GridLabel" customModule="Tic_Tac_Toe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="3LT-ER-Kae"/>
+                                            <constraint firstAttribute="width" constant="75" id="ERi-Z1-7sl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24747833609580994" green="0.49364674091339111" blue="0.094564788043498993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="hpp-fr-8po" firstAttribute="top" secondItem="wOr-X5-x6e" secondAttribute="top" id="456-nU-Mzn"/>
+                                    <constraint firstItem="keB-kD-FDS" firstAttribute="leading" secondItem="ebj-lR-B5i" secondAttribute="leading" id="4Eg-Jd-i1J"/>
+                                    <constraint firstItem="ROF-GN-0Cs" firstAttribute="leading" secondItem="hpp-fr-8po" secondAttribute="trailing" constant="13" id="4Jo-zM-pQB"/>
+                                    <constraint firstItem="ebj-lR-B5i" firstAttribute="baseline" secondItem="dz3-9j-71C" secondAttribute="baseline" id="5GA-Vs-E0V"/>
+                                    <constraint firstItem="hpp-fr-8po" firstAttribute="trailing" secondItem="e7a-l6-MJV" secondAttribute="trailing" id="6Ye-EK-R43"/>
+                                    <constraint firstItem="keB-kD-FDS" firstAttribute="trailing" secondItem="ebj-lR-B5i" secondAttribute="trailing" id="81M-NX-jeo"/>
+                                    <constraint firstAttribute="height" constant="250" id="8F7-eT-3xA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sqz-Mn-z8w" secondAttribute="bottom" id="8T3-sF-f7u"/>
+                                    <constraint firstItem="e7a-l6-MJV" firstAttribute="trailing" secondItem="Sqz-Mn-z8w" secondAttribute="trailing" id="8fX-5n-Mb4"/>
+                                    <constraint firstItem="e7a-l6-MJV" firstAttribute="firstBaseline" secondItem="keB-kD-FDS" secondAttribute="firstBaseline" id="9O3-2K-xo5"/>
+                                    <constraint firstItem="keB-kD-FDS" firstAttribute="firstBaseline" secondItem="mzL-ub-m9r" secondAttribute="firstBaseline" id="BeK-zZ-dQk"/>
+                                    <constraint firstItem="ROF-GN-0Cs" firstAttribute="firstBaseline" secondItem="Fl0-UG-JjY" secondAttribute="firstBaseline" id="DYq-9h-l5W"/>
+                                    <constraint firstAttribute="width" secondItem="wOr-X5-x6e" secondAttribute="height" multiplier="1:1" id="ELB-ir-PR9"/>
+                                    <constraint firstItem="Sqz-Mn-z8w" firstAttribute="firstBaseline" secondItem="ebj-lR-B5i" secondAttribute="firstBaseline" id="KNi-AH-eBK"/>
+                                    <constraint firstItem="Sqz-Mn-z8w" firstAttribute="top" secondItem="e7a-l6-MJV" secondAttribute="bottom" constant="12" id="LGw-hq-iOn"/>
+                                    <constraint firstItem="ROF-GN-0Cs" firstAttribute="trailing" secondItem="keB-kD-FDS" secondAttribute="trailing" id="Lgg-3i-7Mg"/>
+                                    <constraint firstItem="ebj-lR-B5i" firstAttribute="firstBaseline" secondItem="dz3-9j-71C" secondAttribute="firstBaseline" id="Lxk-fH-bwf"/>
+                                    <constraint firstItem="mzL-ub-m9r" firstAttribute="leading" secondItem="dz3-9j-71C" secondAttribute="leading" id="NQ1-SP-Q1l"/>
+                                    <constraint firstItem="e7a-l6-MJV" firstAttribute="leading" secondItem="Sqz-Mn-z8w" secondAttribute="leading" id="NeR-tq-Pjb"/>
+                                    <constraint firstItem="hpp-fr-8po" firstAttribute="baseline" secondItem="ROF-GN-0Cs" secondAttribute="baseline" id="Pmi-xa-ZYW"/>
+                                    <constraint firstItem="hpp-fr-8po" firstAttribute="firstBaseline" secondItem="ROF-GN-0Cs" secondAttribute="firstBaseline" id="RXK-Fo-mfz"/>
+                                    <constraint firstItem="e7a-l6-MJV" firstAttribute="baseline" secondItem="keB-kD-FDS" secondAttribute="baseline" id="T3a-6x-hlO"/>
+                                    <constraint firstItem="Fl0-UG-JjY" firstAttribute="trailing" secondItem="mzL-ub-m9r" secondAttribute="trailing" id="TUG-yj-vl0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fl0-UG-JjY" secondAttribute="trailing" id="UU4-8y-Kdk"/>
+                                    <constraint firstItem="keB-kD-FDS" firstAttribute="baseline" secondItem="mzL-ub-m9r" secondAttribute="baseline" id="b9G-KA-0Cz"/>
+                                    <constraint firstItem="mzL-ub-m9r" firstAttribute="trailing" secondItem="dz3-9j-71C" secondAttribute="trailing" id="fkP-as-jZE"/>
+                                    <constraint firstItem="Sqz-Mn-z8w" firstAttribute="baseline" secondItem="ebj-lR-B5i" secondAttribute="baseline" id="ikT-3n-nBN"/>
+                                    <constraint firstItem="ROF-GN-0Cs" firstAttribute="baseline" secondItem="Fl0-UG-JjY" secondAttribute="baseline" id="jy4-a8-FzU"/>
+                                    <constraint firstItem="Fl0-UG-JjY" firstAttribute="leading" secondItem="ROF-GN-0Cs" secondAttribute="trailing" constant="12" id="kaF-MA-NSM"/>
+                                    <constraint firstItem="ROF-GN-0Cs" firstAttribute="leading" secondItem="keB-kD-FDS" secondAttribute="leading" id="kur-a1-p3n"/>
+                                    <constraint firstAttribute="width" constant="250" id="oVh-x6-bGc"/>
+                                    <constraint firstItem="Fl0-UG-JjY" firstAttribute="leading" secondItem="mzL-ub-m9r" secondAttribute="leading" id="qI9-Ij-zVO"/>
+                                    <constraint firstItem="e7a-l6-MJV" firstAttribute="top" secondItem="hpp-fr-8po" secondAttribute="bottom" constant="13" id="qke-P0-nNv"/>
+                                    <constraint firstItem="hpp-fr-8po" firstAttribute="leading" secondItem="wOr-X5-x6e" secondAttribute="leading" id="r35-FA-W60"/>
+                                    <constraint firstItem="hpp-fr-8po" firstAttribute="leading" secondItem="e7a-l6-MJV" secondAttribute="leading" id="sH1-Hb-VRk"/>
+                                    <constraint firstItem="ROF-GN-0Cs" firstAttribute="centerX" secondItem="wOr-X5-x6e" secondAttribute="centerX" id="wUh-3S-WrH"/>
+                                    <constraint firstItem="e7a-l6-MJV" firstAttribute="centerY" secondItem="wOr-X5-x6e" secondAttribute="centerY" id="yFt-ic-kfv"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tBX-4q-Fo2" appends="YES" id="mu1-1X-0UB"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpP-ZI-xxO">
+                                <rect key="frame" x="94" y="487" width="187" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="2UZ-zu-5u2"/>
+                                    <constraint firstAttribute="width" constant="187" id="jzE-XT-B3S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bk-dd-iFA">
+                                <rect key="frame" x="144" y="536" width="86" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="G3m-dg-VZD"/>
+                                    <constraint firstAttribute="width" constant="86" id="XBJ-Sd-wjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.1664299947" green="0.25656927390000001" blue="0.30177268400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMQ-xm-qBM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Wins: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSN-Gk-ElR">
+                                <rect key="frame" x="16" y="620" width="58" height="27"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Wins: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irw-23-QnD">
+                                <rect key="frame" x="158" y="620" width="58" height="27"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ties: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="did-Yz-fIL">
+                                <rect key="frame" x="318" y="620" width="41" height="27"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJI-v6-OjD">
+                                <rect key="frame" x="62" y="65" width="250" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="ID2-eB-92k"/>
+                                    <constraint firstAttribute="width" constant="250" id="LL6-9s-S32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91142290830612183" green="0.90599608421325684" blue="0.47786873579025269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UpP-ZI-xxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jw0-Pi-KPk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="did-Yz-fIL" secondAttribute="bottom" constant="20.5" id="L85-w4-YEl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kSN-Gk-ElR" secondAttribute="bottom" constant="20" id="MHv-UF-WZg"/>
+                            <constraint firstItem="wOr-X5-x6e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="MUG-DT-lwy"/>
+                            <constraint firstItem="kSN-Gk-ElR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TaC-M3-zgD"/>
+                            <constraint firstItem="wOr-X5-x6e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="YHg-d9-bIJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="did-Yz-fIL" secondAttribute="trailing" constant="16" id="Z2P-Vq-iDs"/>
+                            <constraint firstItem="OJI-v6-OjD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="aPI-hP-1Bg"/>
+                            <constraint firstItem="UpP-ZI-xxO" firstAttribute="top" secondItem="wOr-X5-x6e" secondAttribute="bottom" constant="29" id="bI9-ur-lrS"/>
+                            <constraint firstItem="OJI-v6-OjD" firstAttribute="leading" secondItem="wOr-X5-x6e" secondAttribute="leading" id="bXr-bw-iux"/>
+                            <constraint firstItem="3Bk-dd-iFA" firstAttribute="top" secondItem="UpP-ZI-xxO" secondAttribute="bottom" constant="8" id="dtD-kr-Mer"/>
+                            <constraint firstItem="3Bk-dd-iFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eAV-CX-nlX"/>
+                            <constraint firstItem="Irw-23-QnD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxk-Dd-4dM"/>
+                            <constraint firstItem="wOr-X5-x6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uMs-Lm-Tx1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Irw-23-QnD" secondAttribute="bottom" constant="20.5" id="vv8-1l-6nW"/>
+                            <constraint firstItem="wOr-X5-x6e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wM8-L6-BOT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="wOr-X5-x6e" id="pik-MO-lW1"/>
+                        <outlet property="gridLabel0" destination="hpp-fr-8po" id="3GV-qH-PYl"/>
+                        <outlet property="gridLabel1" destination="ROF-GN-0Cs" id="34k-Uc-hMM"/>
+                        <outlet property="gridLabel2" destination="Fl0-UG-JjY" id="8Nu-2A-6WX"/>
+                        <outlet property="gridLabel3" destination="e7a-l6-MJV" id="Q5r-T2-MsG"/>
+                        <outlet property="gridLabel4" destination="keB-kD-FDS" id="Da5-IH-qDn"/>
+                        <outlet property="gridLabel5" destination="mzL-ub-m9r" id="a2A-Tw-FYw"/>
+                        <outlet property="gridLabel6" destination="Sqz-Mn-z8w" id="56i-UR-PUr"/>
+                        <outlet property="gridLabel7" destination="ebj-lR-B5i" id="xVp-sG-fM8"/>
+                        <outlet property="gridLabel8" destination="dz3-9j-71C" id="DeF-SD-c0n"/>
+                        <outlet property="oWinsLabel" destination="Irw-23-QnD" id="1ec-5z-WVT"/>
+                        <outlet property="tiesLabel" destination="did-Yz-fIL" id="gvH-qw-JPb"/>
+                        <outlet property="winnerLabel" destination="UpP-ZI-xxO" id="5te-tP-UJ8"/>
+                        <outlet property="xWinsLabel" destination="kSN-Gk-ElR" id="2Sl-oN-WVv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tBX-4q-Fo2">
+                    <connections>
+                        <action selector="onTappedGridLabel:" destination="BYZ-38-t0r" id="0Jj-3r-sC7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>
